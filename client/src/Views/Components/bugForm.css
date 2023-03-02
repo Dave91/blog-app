@@ -1,0 +1,86 @@
+.bug-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-image: url("../../images/pencil-sketch-texture-by-vector_corp-on-freepik_com.jpg");
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bug-form h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #0077c9;
+  text-align: center;
+}
+
+/* for infos warnings etc shown as <p> */
+.bug-form p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.bug-form .form-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.bug-form .form-fields label {
+  font-size: 14px;
+  color: maroon;
+  display: block;
+  margin-bottom: -15px;
+}
+
+.bug-form .form-fields input,
+.bug-form .form-fields textarea,
+.bug-form .form-fields select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.bug-form .form-fields #content {
+  height: 5lh;
+}
+
+.bug-form .form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bug-form .form-actions .form-button {
+  display: inline-block;
+  padding: 10px 20px;
+  height: max-content;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077c9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.bug-form .form-actions .form-button:hover {
+  background-color: #0066b2;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.bug-form .form-actions .form-button:active {
+  background-color: #0055a3;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}

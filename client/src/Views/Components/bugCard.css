@@ -1,0 +1,114 @@
+.bug-cont {
+  margin: 0;
+}
+
+/* filter panel */
+.filter-panel {
+  display: block;
+  margin-left: 1rem;
+}
+
+.filters {
+  display: inline;
+  transition: all 0.5s;
+}
+
+.filt-btn {
+  position: inherit;
+  display: inline;
+  width: max-content;
+  height: max-content;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filt-btn:hover {
+  background-color: bisque;
+}
+
+.filt-btn.on {
+  background-color: burlywood;
+}
+
+/* bug cards */
+.bug-card {
+  display: inline-table;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 2% 10% 2% 10%;
+  padding: 1rem;
+  width: 80%;
+  color: black;
+  background-color: ghostwhite;
+  animation: hover-anim 0.5s ease forwards;
+}
+
+@keyframes hover-anim {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.bug-card.hide {
+  display: none;
+}
+
+.bug-card p {
+  text-align: justify;
+  margin: 1rem;
+}
+
+.bug-card h2,
+h4,
+h5 {
+  margin: 1rem;
+}
+
+/* action panel buttons */
+.edit-panel {
+  position: relative;
+  width: max-content;
+  margin: 5px;
+  left: 0;
+  top: 0;
+}
+
+.panel-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  width: max-content;
+  height: max-content;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.panel-btn.delete {
+  color: red;
+}
+
+.panel-btn:hover {
+  transform: translateY(-3px);
+}
