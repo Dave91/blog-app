@@ -74,7 +74,7 @@ export default function Card(props) {
             <h5>Image</h5>
             <img src={data.bimage} alt=""></img>
             {data.btext.split("\n").map((para, ind) => (
-              <p>{para}</p>
+              <p key={ind}>{para}</p>
             ))}
             <h4>Category: {data.bcategory}</h4>
             <h4>Likes: {data.blikes}</h4>
